@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>xi Jia lab4</title>
+  </head>
+  <body>
+    <h1>Volunteer Form</h1>
+    <form
+      action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php"
+      method="post"
+    >
+      <fieldset>
+        <legend><b>My Info</b></legend>
+        <div class="first-name">
+          <label for="first">First name:</label>
+          <input
+            type="text"
+            id="first"
+            name="first_name_field"
+            placeholder="Type first name"
+          />
+        </div>
+        <div class="last-name">
+          <label for="last">Last name:</label>
+          <input
+            type="text"
+            id="last"
+            name="last_name_field"
+            placeholder="Type last name"
+          />
+        </div>
+        <div class="phone-num">
+          <label for="phone">Phone Number:</label>
+          <input
+            type="text"
+            id="phone"
+            name="phone_field"
+            placeholder="Enter Phone Number"
+          />
+        </div>
+        <div class="email">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email_field"
+            placeholder="Enter Email Address"
+          />
+        </div>
+        <div class="gender">
+          <label>Gender:</label>
+          <label for="male">Male:</label>
+          <input type="radio" id="male" name="gender_field" value="Male" />
+          <label for="female">Female:</label>
+          <input type="radio" id="female" name="gender_field" value="Female" />
+        </div>
+        <div class="age">
+          <label>Age:</label>
+          <select name="age_field">
+            <option value="<18 (less than 18)">Under 18</option>
+            <option value="18 - 24">18 - 24</option>
+            <option value="25 - 34">25 - 34</option>
+            <option value="35 - 44">35 - 44</option>
+            <option value="45 - 54">45 - 54</option>
+            <option value="55 - 64">55 - 64</option>
+            <option value="65+">65 and over</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+      <fieldset>
+             <legend>Days Available:</legend>
+             <input type="checkbox" id="day1" name="day1" value="Sunday">
+             <label for="day1"> Sunday</label><br>
+             <input type="checkbox" id="day2" name="day2" value="Monday">
+             <label for="day2"> Monday</label><br>
+             <input type="checkbox" id="day3" name="day3" value="Tuesday">
+             <label for="day3"> Tuesday</label><br>
+             <input type="checkbox" id="day4" name="day4" value="Wednesday">
+             <label for="day4"> Wednesday</label><br>
+             <input type="checkbox" id="day5" name="day5" value="Thursday">
+             <label for="day5"> Thursday</label><br>
+             <input type="checkbox" id="day6" name="day6" value="Friday">
+             <label for="day6"> Friday</label><br>
+             <input type="checkbox" id="day7" name="day7" value="Saturday">
+             <label for="day7"> Saturday</label>
+             <br>
+             <br>
+             <br>
+             <p>Any comment?</p>
+             <textarea name="message" style="width:200px; height:300px;">Write in here</textarea>
+      </fieldset>
+      <button type="Submit">Submit Form</button>
+	    <input type="Hidden" name="hidden_field" value="ple2"/>
+	    </form>
+  </body>
+</html>
